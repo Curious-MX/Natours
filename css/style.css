@@ -19,7 +19,7 @@ body {
     background-size: cover;
     background-position: top;
 
-    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .logo-box {
@@ -37,18 +37,24 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
     display: block;
+
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation: 1s moveInLeft ease-out;
+
 }
 
 .heading-primary-sub {
@@ -56,4 +62,50 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.4px;
+    animation: 1s moveInRight ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
