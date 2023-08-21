@@ -7,10 +7,10 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 .header {
@@ -44,35 +44,34 @@ body {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .heading-primary-main {
     display: block;
-
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 2.1875rem;
     animation: 1s moveInLeft ease-out;
 
 }
 
 .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.0875rem;
     animation: 1s moveInRight ease-out;
 }
 
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-6.25rem);
     }
 
     80% {
-        transform: translateX(10px);
+        transform: translateX(.625rem);
     }
 
     100% {
@@ -84,11 +83,11 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(6.25rem);
     }
 
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-.625rem);
     }
 
     100% {
@@ -100,7 +99,7 @@ body {
 @keyframes moveInButton {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(1.875rem);
     }
 
 
@@ -114,20 +113,20 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 0.9375rem 2.5rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     transition: all .2s;
     position: relative;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-0.1875rem);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 .btn:active {
-    transform: translateY(-1px);
+    transform: translateY(-0.0625rem);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
@@ -141,7 +140,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     position: absolute;
     top: 0;
     left: 0;
