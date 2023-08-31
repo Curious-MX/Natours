@@ -150,7 +150,7 @@ body {
   background-color: #55c57a;
   color: #fff;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-125rem); }
+  transform: translateY(-0.125rem); }
 
 .btn-text:active {
   box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.15);
