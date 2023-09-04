@@ -161,7 +161,6 @@ body {
   .composition__photo {
     width: 55%;
     box-shadow: 0 0.9375rem 1.5625rem rgba(0, 0, 0, 0.4);
-    border-radius: 0.125rem;
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
