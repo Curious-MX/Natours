@@ -105,6 +105,11 @@ body {
   .section-features > * {
     transform: skewY(7deg); }
 
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 12.5rem 0 3.125rem 0;
+  margin-top: -6.25rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -208,6 +213,34 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-0.9375rem) scale(1.03); }
+
+.card {
+  perspective: 93.75rem;
+  -moz-perspective: 93.75rem;
+  height: 31.25rem;
+  position: relative; }
+  .card__side {
+    color: #fff;
+    font-size: 1.25rem;
+    height: 31.25rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right button, #ffb800, #ff7730); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 body {
   font-family: "Lato", sans-serif;
