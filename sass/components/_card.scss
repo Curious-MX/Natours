@@ -16,6 +16,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 0.9375rem 2.5rem rgba($color-black, 0.15);
 
     &--front {
@@ -28,8 +29,8 @@
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-primary-light,
-          $color-primary-dark
+          $color-secondary-light,
+          $color-secondary-dark
         );
       }
     }
@@ -47,9 +48,12 @@
   &__picture {
     background-size: cover;
     height: 14.375rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%,0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%,0 100%);
 
     &--1 {
-      background-image: linear-gradient(to right bottom,$color-primary-light,$color-primary-dark),
+      background-image: linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark),
       url(../../img/nat-5.jpg);
     }
 
