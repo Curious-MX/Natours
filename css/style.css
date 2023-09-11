@@ -217,12 +217,10 @@ body {
 .card {
   perspective: 93.75rem;
   -moz-perspective: 93.75rem;
-  height: 31.25rem;
+  height: 32.5rem;
   position: relative; }
   .card__side {
-    color: #fff;
-    font-size: 1.25rem;
-    height: 31.25rem;
+    height: 32.5rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -254,6 +252,34 @@ body {
       background-image: url(../../img/nat-5.jpg); }
     .card__picture--3 {
       background-image: url(../../img/nat-5.jpg); }
+  .card__heading {
+    font-size: 1.75rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 7.5rem;
+    right: 1.25rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: .625rem .9375rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 184, 0, 0.85), rgba(255, 184, 0, 0.85)); }
+  .card__details {
+    padding: .1875rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: .9375rem;
+        padding: .625rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 body {
   font-family: "Lato", sans-serif;
