@@ -91,6 +91,12 @@ body {
 .u-margin-botton-big {
   margin-bottom: 5rem; }
 
+.u-margin-top-big {
+  margin-top: 5rem; }
+
+.u-margin-top-huge {
+  margin-top: 6.25rem; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 15.625rem 0;
@@ -107,7 +113,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 12.5rem 0 3.125rem 0;
+  padding: 12.5rem 0 9.375rem 0;
   margin-top: -6.25rem; }
 
 .btn:link, .btn:visited {
@@ -135,17 +141,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
-    .btn--white::after {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 6.25rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all .4s; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
 
 .btn--animated {
   animation: moveInButton .5s ease-out 0.75s;
@@ -275,10 +276,10 @@ body {
     box-decoration-break: inherit; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 184, 0, 0.85), rgba(255, 184, 0, 0.85)); }
-      .card__heading-span--1--2 {
-        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(126, 213, 111, 0.85)); }
-        .card__heading-span--1--2--3 {
-          background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(41, 152, 255, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(126, 213, 111, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(41, 152, 255, 0.85)); }
   .card__details {
     padding: 0.1875rem; }
     .card__details ul {
