@@ -116,6 +116,10 @@ body {
   padding: 12.5rem 0 9.375rem 0;
   margin-top: -6.25rem; }
 
+.section-story {
+  padding: 9.375rem 0;
+  background-color: #f7f7f7; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -309,6 +313,30 @@ body {
   .card__price-value {
     font-size: 3.75rem;
     font-weight: 100; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 1.875rem 3.75rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: .1875rem;
+  padding: 3.75rem;
+  padding-left: 5.625rem;
+  font-size: 1rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 9.375rem;
+    height: 9.375rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-1.875) skewX(12deg); }
+  .story__img {
+    height: 100%; }
+  .story__text {
+    transform: skewX(12deg); }
 
 body {
   font-family: "Lato", sans-serif;
