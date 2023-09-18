@@ -3,7 +3,7 @@
   margin: 0 auto;
   box-shadow: 0 1.875rem 3.75rem rgba($color-black, 0.1);
   background-color: $color-white;
-  border-radius: .1875rem;
+  border-radius: 0.1875rem;
   padding: 3.75rem;
   padding-left: 5.625rem;
   font-size: $default-font-size;
@@ -17,14 +17,45 @@
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-1.875) skewX(12deg);
+    position: relative;
+    -webkit-transform: translateX(-3rem) skewX(12deg);
+    transform: translateX(-3rem) skewX(12deg);
+    overflow: hidden;
+    border-radius: 50%;
   }
 
   &__img {
     height: 100%;
+    transform: translateX(-2.5rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s;
   }
 
   &__text {
     transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.0625rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-2.5rem) scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }
