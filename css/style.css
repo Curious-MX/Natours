@@ -107,16 +107,16 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -5rem; }
+  margin-top: -6.25rem; }
   .section-features > * {
     transform: skewY(7deg); }
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 12.5rem 0 9.375rem 0;
-  margin-top: -6.25rem; }
+  padding: 15.625rem 0 9.375rem 0;
+  margin-top: -10rem; }
 
-.section-story {
+.section-stories {
   position: relative;
   padding: 9.375rem 0; }
 
@@ -375,6 +375,7 @@ body {
   .bg-video__content {
     height: 100%;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover; }
 
 body {
