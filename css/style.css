@@ -120,6 +120,15 @@ body {
   position: relative;
   padding: 9.375rem 0; }
 
+.section-book {
+  padding: 9.375rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: url(../../img/nat-10.jpg);
+  background-size: 100%;
+  height: 31.25rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
