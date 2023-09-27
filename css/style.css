@@ -394,10 +394,10 @@ body {
   margin-bottom: 1.25rem; }
 
 .form__input {
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   font-family: inherit;
   color: inherit;
-  padding: .9375rem 1.25rem;
+  padding: 0.9375rem 1.25rem;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
@@ -408,8 +408,23 @@ body {
     outline: none;
     box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
   .form__input__input::-webkit-input-placeholder {
     color: #999; }
+
+.form__label {
+  font-size: .75rem;
+  font-weight: 700;
+  margin-left: 1.25rem;
+  margin-top: .4375rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-2.5rem); }
 
 body {
   font-family: "Lato", sans-serif;
