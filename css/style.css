@@ -402,7 +402,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 40%;
   display: block; }
   .form__input:focus {
     outline: none;
@@ -424,7 +424,7 @@ body {
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
-  transform: translate(-2.5rem); }
+  transform: translateY(-2.5rem); }
 
 body {
   font-family: "Lato", sans-serif;
