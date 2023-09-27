@@ -390,6 +390,27 @@ body {
     -o-object-fit: cover;
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 1.25rem; }
+
+.form__input {
+  font-size: .9375rem;
+  font-family: inherit;
+  color: inherit;
+  padding: .9375rem 1.25rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+  .form__input__input::-webkit-input-placeholder {
+    color: #999; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;

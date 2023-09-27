@@ -1,0 +1,36 @@
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 1.25rem;
+    }
+
+    &__input {
+        font-size: .9375rem;
+        font-family: inherit;
+        color: inherit;
+        padding: .9375rem 1.25rem;
+        border-radius: 3px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 .625rem 1.25rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            
+        }
+        
+        &__input::-webkit-input-placeholder {
+            color: $color-greay-dark-2;
+        }
+    }
+
+
+    &__label {}
+
+}
