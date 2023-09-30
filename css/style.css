@@ -132,23 +132,27 @@ body {
   height: 31.25rem;
   padding: 3.75rem; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.9375rem 2.5rem;
   display: inline-block;
   border-radius: 6.25rem;
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-0.1875rem);
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
+    outline: none;
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
   transform: translateY(-0.0625rem);
   box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); }
 
