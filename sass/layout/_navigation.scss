@@ -8,7 +8,13 @@
     }
 
     &__background {
-        
+        height: 3.75rem;
+        width: 3.75rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 4.0625rem;
+        right: 4.0625rem;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
     }
 
     &__nav {
