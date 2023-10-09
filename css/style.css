@@ -562,6 +562,19 @@ body {
     width: 80%;
     float: right; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #fff;
+  height: 4.375rem;
+  width: 4.375rem;
+  top: 3.75rem;
+  right: 3.75rem;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 2000; }
+
 .navigation__background {
   height: 3.75rem;
   width: 3.75rem;
@@ -569,4 +582,16 @@ body {
   position: fixed;
   top: 4.0625rem;
   right: 4.0625rem;
-  background-image: radial-gradient(#7ed56f, #28b485); }
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 1000; }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.navigation__list {
+  position: absolute; }

@@ -1,35 +1,49 @@
 .navigation {
-    &__checkbox {
-        
-    }
+  &__checkbox {
+    display: none;
+  }
 
-    &__button {
-        
-    }
+  &__button {
+    background-color: $color-white;
+    height: 4.375rem;
+    width: 4.375rem;
+    top: 3.75rem;
+    right: 3.75rem;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 2000;
+  }
 
-    &__background {
-        height: 3.75rem;
-        width: 3.75rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 4.0625rem;
-        right: 4.0625rem;
-        background-image: radial-gradient($color-primary-light, $color-primary-dark);
-    }
+  &__background {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4.0625rem;
+    right: 4.0625rem;
+    background-image: radial-gradient(
+      $color-primary-light,
+      $color-primary-dark
+    );
+    z-index: 1000;
+  }
 
-    &__nav {
-        
-    }
+  &__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+  }
 
-    &__list {
-        
-    }
+  &__list {
+    position: absolute;
+  }
 
-    &__item {
-        
-    }
+  &__item {
+  }
 
-    &__link {
-        
-    }
+  &__link {
+  }
 }
