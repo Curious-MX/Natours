@@ -26,6 +26,7 @@
       $color-primary-dark
     );
     z-index: 1000;
+    transform: scale(80);
   }
 
   &__nav {
@@ -39,11 +40,42 @@
 
   &__list {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
   }
 
   &__item {
+    margin: .625rem;
   }
 
   &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.875rem;
+      font-weight: 300;
+      padding: .625rem 1.25rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white -50%);
+      background-size: 230%;
+      transition: all .4s;
+
+      span {
+        margin-right: .9375rem;
+        display: inline-block;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(.625rem);
+    }
   }
 }
