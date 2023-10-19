@@ -470,6 +470,41 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden; }
+  .popup__left {
+    width: 33.333333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.6666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1.875rem 3.125rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: .875rem;
+    margin-bottom: 2.5rem;
+    column-count: 2; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -587,7 +622,7 @@ body {
   right: 4.0625rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0 0.07, 1); }
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navigation__nav {
   height: 100vh;
@@ -609,21 +644,21 @@ body {
   width: 100%; }
 
 .navigation__item {
-  margin: .625rem; }
+  margin: 0.625rem; }
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 1.875rem;
   font-weight: 300;
-  padding: .625rem 1.25rem;
+  padding: 0.625rem 1.25rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff -50%);
   background-size: 230%;
-  transition: all .4s; }
+  transition: all 0.4s; }
   .navigation__link:link span, .navigation__link:visited span {
-    margin-right: .9375rem;
+    margin-right: 0.9375rem;
     display: inline-block; }
 
 .navigation__link:hover, .navigation__link:active {
@@ -650,17 +685,17 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .navigation__icon::after {
-    top: -.5rem; }
+    top: -0.5rem; }
   .navigation__icon::before {
-    top: .5rem; }
+    top: 0.5rem; }
 
 .navigation__button:hover .navigation__icon::before {
-  top: .625rem; }
+  top: 0.625rem; }
 
 .navigation__button:hover .navigation__icon::after {
-  top: -.625rem; }
+  top: -0.625rem; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }

@@ -12,7 +12,7 @@
     position: fixed;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 .625rem 1.875rem rgba($color-black, .1);
+    box-shadow: 0 0.625rem 1.875rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
   }
@@ -29,7 +29,7 @@
       $color-primary-dark
     );
     z-index: 1000;
-    transition: transform .8s cubic-bezier(0.86,0 0.07,1);
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     // transform: scale(80);
   }
 
@@ -41,7 +41,7 @@
     z-index: 1500;
     opacity: 0;
     width: 0;
-    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   &__list {
@@ -55,7 +55,7 @@
   }
 
   &__item {
-    margin: .625rem;
+    margin: 0.625rem;
   }
 
   &__link {
@@ -64,16 +64,21 @@
       display: inline-block;
       font-size: 1.875rem;
       font-weight: 300;
-      padding: .625rem 1.25rem;
+      padding: 0.625rem 1.25rem;
       color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white -50%);
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white -50%
+      );
       background-size: 230%;
-      transition: all .4s;
+      transition: all 0.4s;
 
       span {
-        margin-right: .9375rem;
+        margin-right: 0.9375rem;
         display: inline-block;
       }
     }
@@ -82,7 +87,7 @@
     &:active {
       background-position: 100%;
       color: $color-primary;
-      transform: translateX(.625rem);
+      transform: translateX(0.625rem);
     }
   }
 
@@ -117,19 +122,23 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
-    &::after { top: -.5rem;}
-    &::before{ top: .5rem;}
+    &::after {
+      top: -0.5rem;
+    }
+    &::before {
+      top: 0.5rem;
+    }
   }
 
   &__button:hover &__icon::before {
-    top: .625rem;
+    top: 0.625rem;
   }
 
   &__button:hover &__icon::after {
-    top: -.625rem;
+    top: -0.625rem;
   }
 
   &__checkbox:checked + &__button &__icon {
