@@ -477,7 +477,10 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999; }
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -503,7 +506,31 @@ body {
   .popup__text {
     font-size: .875rem;
     margin-bottom: 2.5rem;
-    column-count: 2; }
+    column-count: 2;
+    column-gap: 2.5rem;
+    column-rule: 1px solid #eee;
+    -moz-column-count: 2;
+    -moz-column-gap: 2.5rem;
+    -moz-column-rule: 1px solid #eee;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 1.875rem;
+    text-decoration: none;
+    display: inline-block;
+    transform: all .2s;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #55c57a; }
 
 body {
   font-family: "Lato", sans-serif;

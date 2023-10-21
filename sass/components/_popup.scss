@@ -6,6 +6,9 @@
     left: 0;
     background-color: rgba($color-black, .8);
     z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 
     &__content {
         @include absCenter;
@@ -38,5 +41,42 @@
         font-size: .875rem;
         margin-bottom: 2.5rem;
         column-count: 2;
+        column-gap: 2.5rem;
+        column-rule: 1px solid $color-grey-light-2;
+
+        // for Mozilla Firefox
+
+        -moz-column-count: 2;
+        -moz-column-gap: 2.5rem;
+        -moz-column-rule: 1px solid $color-grey-light-2;
+
+        hyphens: auto;
+        -moz-hyphens: auto; // for Mozilla (Firefox)
+        -ms-hyphens: auto; // for Microsoft Edge
+        -webkit-hyphens: auto; // for Mozilla (Firefox) and google chroom
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 1.875rem;
+            text-decoration: none;
+            display: inline-block;
+            transform: all .2s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
