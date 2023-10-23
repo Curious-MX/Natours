@@ -1,14 +1,59 @@
- @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
- }
+//  MEDIA QUERY MANAGER
+/*
+0 - 600PX:     Phone
+600 - 900px:   Tablet portrait
+900 - 1200px:  Tablet landscape
+[1200 - 1800]  is where our normal styles apply
+1800px + :     Big desktop
 
- @mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
- }
+$berakpoint arguement choices:
+- phone
+- tha-port
+- tab-lan
+-big-desktop
+
+ORDER
+
+1rem = 16px
+*/
+
+// @mixin respond($breakpoint) {
+//   @if $berakpoint == phone {
+//     @media (max-width: 37.5) {
+//       @content;
+//     } // 600px
+//   }
+
+//   @if $berakpoint == tab-port {
+//     @media (max-width: 56.25em) {
+//       @content;
+//     } // 900px
+//   }
+
+//   @if $berakpoint == tab-land {
+//     @media (max-width: 75em) {
+//       @content;
+//     } // 1200px
+//   }
+
+//   @if $berakpoint == tab-desktop {
+//     @media (min-width: 112.5em) {
+//       @content;
+//     } // 1800px
+//   }
+// }
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
