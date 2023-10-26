@@ -11,7 +11,7 @@ $berakpoint arguement choices:
 - tab-lan
 -big-desktop
 
-ORDER
+ORDER: Base + typography > general layout + grid > page layout > components
 
 1rem = 16px
 */
