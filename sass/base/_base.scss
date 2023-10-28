@@ -22,4 +22,9 @@ html {
 
 body {
   box-sizing: border-box;
+  margin-bottom: 1.875rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
