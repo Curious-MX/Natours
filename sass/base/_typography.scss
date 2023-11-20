@@ -48,6 +48,14 @@ body {
   letter-spacing: .125rem;  
   transition: all .2s;
 
+  @include respond(tab-port) {
+    font-size: 1.875rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.5625rem;
+  }
+
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .3125rem .625rem 1.25rem rgba($color-black, .2);
