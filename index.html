@@ -16,7 +16,7 @@
 
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
@@ -26,11 +26,27 @@
 
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About natous</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your benfits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book now</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span> About natous</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span> Your benfits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span> Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span> Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span> Book now</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -44,7 +60,9 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -79,20 +97,32 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg"
-                alt="photo 1"
+                srcset="img/nat-1-jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25rem) 20vw, (max-width: 18.75rem) 30vw, 300x"
+                alt="Photo 1"
                 class="composition__photo composition__photo--p1"
+                src="img/nat-1-large.jpg"
               />
+
               <img
-                src="img/nat-2-large.jpg"
-                alt="photo 2"
+                srcset="img/nat-2-jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 56.25rem) 20vw, (max-width: 18.75rem) 30vw, 300x"
+                alt="Photo 2"
                 class="composition__photo composition__photo--p2"
+                src="img/nat-2-large.jpg"
               />
+
               <img
-                src="img/nat-3-large.jpg"
-                alt="photo 3"
+                srcset="img/nat-3-jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 56.25rem) 20vw, (max-width: 18.75rem) 30vw, 300x"
+                alt="Photo 3"
                 class="composition__photo composition__photo--p3"
+                src="img/nat-3-large.jpg"
               />
+
+              <!-- <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1" />
+            <img src="img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2" />
+            <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3" /> -->
             </div>
           </div>
         </div>
@@ -332,15 +362,24 @@
       <div class="popup" id="popup">
         <div class="popup__content">
           <div class="popup__left">
-            <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-            <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+            <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
           </div>
           <div class="popup__right">
             <a href="#section-tours" class="popup__close">&times;</a>
-            <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-            <h3 class="heading-tertiary u-margin-bottom-small">Importent &ndash; Please read these terms before booking</h3>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Start booking now
+            </h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Importent &ndash; Please read these terms before booking
+            </h3>
             <p class="popup__text">
-              Before proceeding with your reservation, it is crucial that you carefully read and understand the following terms and conditions. By booking any services or products, you are acknowledging your agreement to adhere to the guidelines and policies outlined herein. Your commitment to these terms will ensure a smooth and mutually beneficial experience for all parties involved.
+              Before proceeding with your reservation, it is crucial that you
+              carefully read and understand the following terms and conditions.
+              By booking any services or products, you are acknowledging your
+              agreement to adhere to the guidelines and policies outlined
+              herein. Your commitment to these terms will ensure a smooth and
+              mutually beneficial experience for all parties involved.
             </p>
             <a href="#" class="btn btn--green">Book now</a>
           </div>
@@ -418,7 +457,17 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="img/logo-green-small-x1.png x1, img/logo-green-small-x2.png x2"
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, /logo-green-2x.png 2x"
+            alt="Full logo"
+            src="img/logo-green-2x.png"
+          />
+        </picture>
       </div>
 
       <div class="row">
