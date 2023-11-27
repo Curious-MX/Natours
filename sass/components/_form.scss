@@ -4,15 +4,15 @@
   }
 
   &__input {
-    font-size: 0.9375rem;
+    font-size: .9375rem;
     font-family: inherit;
     color: inherit;
-    padding: 0.9375rem 1.25rem;
-    border-radius: 3px;
+    padding: .9375rem 1.25rem;
+    border-radius: .125rem;
     background-color: rgba($color-white, 0.5);
     border: none;
-    border-bottom: 3px solid transparent;
-    width: 40%;
+    border-bottom: .1875rem solid transparent;
+    width: 90%;
     display: block;
     transition: all 0.3s;
 
@@ -22,24 +22,24 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 0.625rem 1.25rem rgba($color-black, 0.1);
-      border-bottom: 3px solid $color-primary;
+      box-shadow: 0 .625rem 1.25rem rgba($color-black, 0.1);
+      border-bottom: .1873rem solid $color-primary;
     }
 
     &:focus:invalid {
-      border-bottom: 3px solid $color-secondary-dark;
+      border-bottom: .1875rem solid $color-secondary-dark;
     }
 
-    &__input::-webkit-input-placeholder {
+    &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
     }
   }
 
   &__label {
-    font-size: 0.75rem;
+    font-size: .75rem;
     font-weight: 700;
     margin-left: 1.25rem;
-    margin-top: 0.4375rem;
+    margin-top: .4375rem;
     display: block;
     transition: all 0.3s;
   }
@@ -50,10 +50,6 @@
     transform: translateY(-2.5rem);
   }
 
-  &__radio-input {
-    display: none;
-  }
-
   &__radio-group {
     width: 49%;
     display: inline-block;
@@ -62,6 +58,10 @@
       width: 100%;
       margin-bottom: 1.25rem;
     }
+  }
+
+  &__radio-input {
+    display: none;
   }
 
   &__radio-label {
@@ -93,7 +93,7 @@
       transform: translate(-50%, -50%);
       background-color: $color-primary;
       opacity: 0;
-      transition: opacity .2s;
+      transition: opacity 0.2s;
     }
   }
 
