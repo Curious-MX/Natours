@@ -4,14 +4,14 @@
   }
 
   &__input {
-    font-size: .9375rem;
+    font-size: 0.9375rem;
     font-family: inherit;
     color: inherit;
-    padding: .9375rem 1.25rem;
-    border-radius: .125rem;
+    padding: 0.9375rem 1.25rem;
+    border-radius: 0.125rem;
     background-color: rgba($color-white, 0.5);
     border: none;
-    border-bottom: .1875rem solid transparent;
+    border-bottom: 0.1875rem solid transparent;
     width: 90%;
     display: block;
     transition: all 0.3s;
@@ -22,12 +22,12 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 .625rem 1.25rem rgba($color-black, 0.1);
-      border-bottom: .1873rem solid $color-primary;
+      box-shadow: 0 0.625rem 1.25rem rgba($color-black, 0.1);
+      border-bottom: 0.1873rem solid $color-primary;
     }
 
     &:focus:invalid {
-      border-bottom: .1875rem solid $color-secondary-dark;
+      border-bottom: 0.1875rem solid $color-secondary-dark;
     }
 
     &::-webkit-input-placeholder {
@@ -36,10 +36,10 @@
   }
 
   &__label {
-    font-size: .75rem;
+    font-size: 0.75rem;
     font-weight: 700;
     margin-left: 1.25rem;
-    margin-top: .4375rem;
+    margin-top: 0.4375rem;
     display: block;
     transition: all 0.3s;
   }
@@ -74,18 +74,18 @@
   &__radio-button {
     height: 1.875rem;
     width: 1.875rem;
-    border: .3125rem solid $color-primary;
+    border: 0.3125rem solid $color-primary;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
     left: 0;
-    top: -.25rem;
+    top: -0.25rem;
 
     &::after {
       content: "";
       display: block;
-      height: .8125rem;
-      width: .8125rem;
+      height: 0.8125rem;
+      width: 0.8125rem;
       border-radius: 50%;
       position: absolute;
       top: 50%;
