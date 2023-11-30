@@ -5,11 +5,11 @@
 
   &__button {
     background-color: $color-white;
-    height: 7rem;
-    width: 7rem;
+    height: 5.375rem;
+    width: 5.375rem;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 4.75rem;
+    right: 4.75rem;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
@@ -28,16 +28,13 @@
   }
 
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 4.75rem;
+    width: 4.75rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
-    background-image: radial-gradient(
-      $color-primary-light,
-      $color-primary-dark
-    );
+    top: 5.0624rem;
+    right: 5.0624rem;
+    background-image: radial-gradient(#7ed56f, #28b485);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -124,7 +121,7 @@
   //ICON
   &__icon {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 2.6rem;
 
     &,
     &::before,
